@@ -1,0 +1,39 @@
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\root\source\repos\ProjecrMax\bin\Debug\ProjecrMax.exe, файл: c:\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x004F42FC (32-bit), Flags: CMdRe0, Thread: 0x5C50 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00416F73 in C:\Users\root\source\repos\ProjecrMax\bin\Debug\ProjecrMax.exe: txBitBlt() at c:/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0041D90E in C:\Users\root\source\repos\ProjecrMax\bin\Debug\ProjecrMax.exe: main() at C:/Users/root/source/repos/ProjecrMax/main.cpp (58):
+
+     56:     if(pic1_visible)
+     57:     {
+=>   58:     txBitBlt (txDC(), 100, 200, 308, 300, pic1);
+     59:     }
+     60: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\mingw\include\txlib.h
+Compiled:	Oct 12 2023 14:07:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, Debug
+Started:	Oct 12 2023 14:07:51
+
+Run file:	C:\Users\root\source\repos\ProjecrMax\bin\Debug\ProjecrMax.exe
+Directory:	C:\Users\root\source\repos\ProjecrMax
+
+--------------------------------------------------
